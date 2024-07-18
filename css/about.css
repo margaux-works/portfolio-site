@@ -47,58 +47,7 @@ td {
 }
 
 .years {
-  font-size: 0.9em;
-  font-style: italic;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: var(--secondary-color);
-  }
-  100% {
-    fill: var(--tertiary-color);
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  font: italic 0.9em;
 }
 
 @supports (display: grid) {
@@ -134,4 +83,47 @@ td {
     width: 100%; /* Adjust as needed */
     max-width: 300px; /* Adjust as needed */
   }
+}
+
+svg {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+@keyframes colorChange {
+  0% {
+    fill: var(--primary-color);
+  }
+  50% {
+    fill: var(--tertiary-color);
+  }
+  100% {
+    fill: var(--secondary-color);
+  }
+}
+
+.button {
+  animation: colorChange 2s infinite;
+}
+
+@keyframes moveMouse {
+  /* from {
+    transform: translate(200, 50px);
+  }
+  to {
+    transform: translate(100px, 50px);
+  } */
+  0% {
+    transform: translateX(-10px) translateY(10px);
+  }
+  50% {
+    transform: translateX(120px) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-20px) translateY(10px);
+  }
+}
+
+.mouse {
+  animation: moveMouse 5s linear infinite;
 }
