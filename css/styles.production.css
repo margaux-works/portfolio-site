@@ -5,45 +5,60 @@
 * Browsers: last 4 version
 */
 
+/* Colors used
+
+background: #edffec | alternative: #f2efe9 #F7F7FF #fff8f3
+green: #61E786
+dark grey: #5A5766
+dark purple: #48435C
+purple: #9792E3 | alternative: #c7c4f2
+
+*Font used
+Roboto
+Roboto Mono
+*/
+
+:root {
+  --primary-color: #48435c;
+  --secondary-color: #61e786;
+  --tertiary-color: #c7c4f2;
+  --bg-color: #edffec;
+  --primary-font-weight: 400;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #edffec;
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  background-color: var(--bg-color);
+  font: var(--primary-font-weight) 16px Roboto, sans-serif;
   line-height: 1;
-  color: #48435c;
+  color: var(--primary-color);
 }
 
 h1 {
-  font-family: Roboto Mono, monospace;
-  font-size: 2em;
-  font-weight: 500;
+  font: 500 2em Roboto Mono, monospace;
 }
 
 h2 {
-  font-family: Roboto Mono, monospace;
-  font-size: 1.2em;
-  font-weight: 500;
+  font: 500 1.2em Roboto Mono, monospace;
 }
 
 a {
-  color: #48435c;
+  color: var(--primary-color);
   text-decoration: none;
   cursor: pointer;
 }
 
 a:active {
-  color: #61e786;
+  color: var(--secondary-color);
 }
 
 .navigation-list__item--active {
-  color: #48435c;
-  background-color: #61e786;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 footer {
@@ -85,10 +100,8 @@ footer {
 }
 
 #title-logo {
-  font-family: Roboto Mono, monospace;
+  font: 500 2em Roboto Mono, monospace;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 2em;
   position: relative;
 }
 
@@ -105,7 +118,7 @@ footer {
   left: 0px;
   top: 0px;
   content: "";
-  background: #61e786;
+  background: var(--secondary-color);
   opacity: 0.8;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -137,7 +150,7 @@ footer {
 }
 
 p span {
-  background-color: #c7c4f2;
+  background-color: var(--tertiary-color);
 }
 
 main {
@@ -145,76 +158,29 @@ main {
   width: 100%;
 }
 
-.email-link {
-  background-color: #61e786;
-  border: 1px solid #48435c;
-  border-radius: 4px;
-  padding: 1.25em 1.75em;
-  line-height: 1;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-  font-family: Roboto Mono, monospace;
-  margin-bottom: 20px;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-
-.submit {
-  background-color: #61e786;
-  border: 1px solid #48435c;
-  border-radius: 4px;
-  padding: 1.25em 1.75em;
-  line-height: 1;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-  font-family: Roboto Mono, monospace;
-  margin-bottom: 20px;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-
+.email-link,
+.submit,
 .download-cv {
-  background-color: #61e786;
-  border: 1px solid #48435c;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   padding: 1.25em 1.75em;
   line-height: 1;
   text-decoration: none;
-  margin-top: 20px;
+  margin: 20px auto;
   display: inline-block;
   font-family: Roboto Mono, monospace;
-  margin-bottom: 20px;
   -webkit-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
 
-.email-link:hover {
-  outline: none;
-  -webkit-box-shadow: 4px 4px 0 0 #48435c;
-  box-shadow: 4px 4px 0 0 #48435c;
-  -webkit-transform: translate(-5px, -5px);
-  -ms-transform: translate(-5px, -5px);
-  transform: translate(-5px, -5px);
-}
-
-.submit:hover {
-  outline: none;
-  -webkit-box-shadow: 4px 4px 0 0 #48435c;
-  box-shadow: 4px 4px 0 0 #48435c;
-  -webkit-transform: translate(-5px, -5px);
-  -ms-transform: translate(-5px, -5px);
-  transform: translate(-5px, -5px);
-}
-
+.email-link:hover,
+.submit:hover,
 .download-cv:hover {
   outline: none;
-  -webkit-box-shadow: 4px 4px 0 0 #48435c;
-  box-shadow: 4px 4px 0 0 #48435c;
+  -webkit-box-shadow: 4px 4px 0 0 var(--primary-color);
+  box-shadow: 4px 4px 0 0 var(--primary-color);
   -webkit-transform: translate(-5px, -5px);
   -ms-transform: translate(-5px, -5px);
   transform: translate(-5px, -5px);

@@ -25,23 +25,17 @@ Roboto Mono
 
 body {
   background-color: var(--bg-color);
-  font-family: Roboto, sans-serif;
-  font-weight: var(--primary-font-weight);
-  font-size: 16px;
+  font: var(--primary-font-weight) 16px Roboto, sans-serif;
   line-height: 1;
   color: var(--primary-color);
 }
 
 h1 {
-  font-family: Roboto Mono, monospace;
-  font-size: 2em;
-  font-weight: 500;
+  font: 500 2em Roboto Mono, monospace;
 }
 
 h2 {
-  font-family: Roboto Mono, monospace;
-  font-size: 1.2em;
-  font-weight: 500;
+  font: 500 1.2em Roboto Mono, monospace;
 }
 
 a {
@@ -87,10 +81,8 @@ footer {
 }
 
 #title-logo {
-  font-family: Roboto Mono, monospace;
+  font: 500 2em Roboto Mono, monospace;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 2em;
   position: relative;
 }
 
@@ -154,10 +146,9 @@ main {
   padding: 1.25em 1.75em;
   line-height: 1;
   text-decoration: none;
-  margin-top: 20px;
+  margin: 20px auto;
   display: inline-block;
   font-family: Roboto Mono, monospace;
-  margin-bottom: 20px;
   transition-duration: 0.2s;
 }
 

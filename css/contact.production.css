@@ -5,6 +5,14 @@
 * Browsers: last 4 version
 */
 
+:root {
+  --primary-color: #48435c;
+  --secondary-color: #61e786;
+  --tertiary-color: #c7c4f2;
+  --bg-color: #edffec;
+  --primary-font-weight: 400;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +38,7 @@
 }
 
 .contact-form {
-  border-top: solid 1px #48435c;
+  border-top: solid 1px var(--primary-color);
 }
 
 form {
@@ -54,29 +62,13 @@ form {
   margin: 10px 0 5px;
 }
 
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #48435c;
-  border-radius: 5px;
-  background-color: #c7c4f260;
-}
-
-input[type="telephone"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #48435c;
-  border-radius: 5px;
-  background-color: #c7c4f260;
-}
-
+input[type="email"],
+input[type="telephone"],
 textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #48435c;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   background-color: #c7c4f260;
 }

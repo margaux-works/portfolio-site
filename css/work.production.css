@@ -5,6 +5,14 @@
 * Browsers: last 4 version
 */
 
+:root {
+  --primary-color: #48435c;
+  --secondary-color: #61e786;
+  --tertiary-color: #c7c4f2;
+  --bg-color: #edffec;
+  --primary-font-weight: 400;
+}
+
 .section-work {
   margin: 10px 20px;
   line-height: 1.3em;
@@ -26,7 +34,7 @@
   }
 
   .work-grid__item {
-    background-color: #c7c4f2;
+    background-color: var(--tertiary-color);
     width: auto;
     min-height: auto;
     padding: 10px 10px;
