@@ -17,6 +17,38 @@
   clear: both;
 }
 
+.portrait-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.portrait-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: opacity 1s ease-in-out;
+}
+
+.real-portrait {
+  opacity: 0;
+}
+
+.portrait-container:hover .real-portrait {
+  opacity: 1;
+}
+
+.portrait-container:hover .pixel-portrait {
+  opacity: 0;
+}
+
 @media all and (max-width: 500px) {
   .profile_portrait {
     float: none;
