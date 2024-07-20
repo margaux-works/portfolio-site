@@ -58,7 +58,6 @@ td {
   }
 
   .about-portrait {
-    flex: float;
     width: 300px;
   }
 }
