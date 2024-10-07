@@ -16,6 +16,10 @@
   width: 33%;
 }
 
+.meet-app {
+  width: 100%;
+}
+
 @supports (display: grid) {
   .work-grid {
     display: grid;
