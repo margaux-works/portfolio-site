@@ -14,15 +14,17 @@
 }
 
 .contact-info,
-.contact-form {
+.contact-links {
   width: 100%;
   max-width: 600px;
   padding: 20px;
   text-align: center;
 }
 
-.contact-form {
-  border-top: solid 1px var(--primary-color);
+@media (min-width: 750px) {
+  .contact-info {
+    border-bottom: 1px solid var(--primary-color);
+  }
 }
 
 form {
@@ -41,8 +43,8 @@ form {
   margin: 10px 0 5px;
 }
 
-input[type="email"],
-input[type="tel"],
+input[type='email'],
+input[type='tel'],
 textarea {
   width: 100%;
   padding: 10px;

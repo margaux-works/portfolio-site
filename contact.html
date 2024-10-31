@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
-    <link rel="stylesheet" type="text/css" href="css/contact.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,51 +79,9 @@
           >
         </div>
 
-        <div class="contact-form">
-          <h2>or write your message here</h2>
-          <form action="#" method="post" id="form-contact">
-            <label class="standard-label" for="email">Enter your email*</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Email"
-              name="email"
-              required
-            />
-            <br />
-            <label class="standard-label" for="telephone"
-              >Enter your phone number</label
-            >
-            <input
-              type="tel"
-              id="telephone"
-              placeholder="Phone Number"
-              name="telephone"
-              pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
-            />
-            <br />
-            <label class="standard-label" for="message"
-              >Type your message*</label
-            >
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Your message goes here"
-              cols="30"
-              rows="10"
-              maxlength="240"
-              required
-            ></textarea>
-            <br />
-            <a class="submit">Send your message</a>
-          </form>
-        </div>
-      </div>
-    </main>
-
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
+        <div class="contact-links">
+          <h2>or find me here</h2>
+          <div class="main-social-media">
         <a href="https://github.com/margaux-works" target="_blank"
           ><img src="./img/github_icon.svg" alt="github logo" height="25"
         /></a>
@@ -133,7 +91,12 @@
           ><img src="./img/linkedin_icon.svg" alt="LinkedIn logo" height="25"
         /></a>
       </div>
-    </footer>
+          
+       
+      </div>
+    </main>
+
+    
     <script src="js/tota11y.min.js"></script>
   </body>
 </html>
