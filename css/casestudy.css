@@ -1,0 +1,44 @@
+.section-case {
+  margin: 10px 20px;
+  line-height: 1.3em;
+}
+
+.case-links {
+  text-align: center;
+}
+
+.case-links a {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.overview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.feature-title {
+  font-weight: 700;
+  background-color: var(--secondary-color);
+}
+
+.grid-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.screenshot {
+  max-width: 100%;
+}
+
+.credits {
+  font-size: 0.9rem;
+}

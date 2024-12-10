@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margaux' work</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/casestudy.production.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div id="title-logo" class="pullRight">
+        <a href="index.html" class="page-header__item">Margaux</a>
+      </div>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+            >
+              <span class="nav-num">01</span> Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">
+              <span class="nav-num">02</span> About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+            >
+              <span class="nav-num">03</span> Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item"
+            >
+              <span class="nav-num">04</span> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section-case">
+      <h1>My Flix Angular</h1>
+      <div class="case-links">
+        <a
+          href="https://github.com/margaux-works/myFlix-angular"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        -
+        <a
+          href="https://margaux-works.github.io/myFlix-angular/welcome"
+          target="_blank"
+        >
+          Live Site
+        </a>
+      </div>
+      <div>
+        <p>
+          The <span>MyFlix Angular Application </span>is a
+          <span>single-page, responsive movie app </span> that allows users to
+          explore a vast database of movies, view detailed information about
+          each, and manage a personalized user profile. This project, developed
+          using <span>Angular</span> and <span>TypeScript</span>, demonstrates a
+          robust combination of client-side and server-side development with a
+          focus on user experience.
+        </p>
+      </div>
+      <div>
+        <h3>Tech Stack</h3>
+        <p>
+          Angular, TypeScript, Angular Material, Node.js, Express, MongoDB,
+          JSDoc
+        </p>
+      </div>
+      <div class="overview-container">
+        <div>
+          <h3>Purpose and Context</h3>
+          <p>
+            This project was a key milestone in my web development journey
+            during the CareerFoundry bootcamp. Building on a backend and
+            database I had previously created for a React-based MyFlix app, I
+            chose Angular for this implementation to expand my skills in modern
+            frontend frameworks and TypeScript.
+          </p>
+        </div>
+        <div>
+          <h3>Objective</h3>
+          <p>
+            The goal was to create a full-featured frontend using Angular,
+            showcasing a professional-level understanding of UI frameworks,
+            state management, and API integrations. It was also an opportunity
+            to apply a clean, modular architecture suitable for scalable
+            projects
+          </p>
+        </div>
+      </div>
+      <div class="features-container">
+        <div>
+          <p class="feature-title">User Authentication</p>
+          <p>
+            Secure registration and login functionality with JWT-based
+            authentication.
+          </p>
+        </div>
+        <div>
+          <p class="feature-title">Browse Movies</p>
+          <p>
+            A responsive movie list view, featuring cards with movie posters and
+            summary information.
+          </p>
+        </div>
+        <div>
+          <p class="feature-title">Movie Details</p>
+          <p>
+            Detailed views for movies, including modals for director and genre
+            details.
+          </p>
+        </div>
+        <div>
+          <p class="feature-title">User Profile</p>
+          <p>
+            Update personal data through an intuitive form. Manage a list of
+            favorite movies, with the ability to add or remove them. Delete the
+            user account directly from the profile page.
+          </p>
+        </div>
+      </div>
+      <div class="core-features">
+        <h3>User profile Management</h3>
+        <div class="grid-features">
+          <p>
+            The user profile page offers functionality to update user details,
+            manage favorite movies, and delete the account. Reusing the modular
+            components and forms made it easy to integrate validation and
+            responsiveness. <br />
+            <br />
+            <span>Dynamic User Profile </span> <br />
+            <br />
+            Update The user-profile.component.ts file demonstrates how the user
+            profile can be dynamically updated using an API call. It captures
+            changes in the user data and communicates with the backend to
+            persist updates, providing immediate feedback to the user with
+            snackbars for success or error messages. <br />
+            <br />
+            <span>Code Highlight</span><br />
+            <br />
+            The editUser method showcases how user data is submitted via an API
+            request and how the UI is updated accordingly, including refreshing
+            favorite movies and updating local storage.
+          </p>
+          <img
+            src="/img/profile-view.png"
+            alt="myFlix-angular"
+            class="screenshot"
+          />
+        </div>
+      </div>
+      <div class="conclusion">
+        <p class="feature-title">Conclusion</p>
+        <p>
+          The <span> MyFlix Angular app </span>represents a significant step in
+          my web development journey! It allowed me to master
+          <span>Angular</span> and <span> TypeScript </span> while reinforcing
+          concepts of modular design and responsive UI development. I am proud
+          of the polished, user-centric experience I was able to deliver and am
+          eager to continue refining my skills in modern web technologies
+        </p>
+        <div>
+          <p class="credits">
+            CREDITS: <strong>Role: </strong> Margaux as Lead Developer |
+            <strong>Mentor: </strong> Faizal Patel |
+            <strong>Special Thanks: </strong> My tutor Othman for their guidance
+            during the project.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div></div>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/margaux-works" target="_blank"
+          ><img src="./img/github_icon.svg" alt="github logo" height="25"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/margaux-espinasse-16356518/"
+          target="_blank"
+          ><img src="./img/linkedin_icon.svg" alt="LinkedIn logo" height="25"
+        /></a>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
